@@ -7,5 +7,7 @@ chars.addEventListener('keydown', (e) =>{
     let metachar = e.metaKey
     document.querySelector('#key-value').innerHTML = `key code: ${keyCode} location: ${keyValue} metachar: ${metachar}`
     printChars('')//prevent to much char on input box and focusing one char
+    let body = document.querySelector('body');
+    body.style.background =  `rgba(60,${keyCode},${keyValue})`;
 });
 
